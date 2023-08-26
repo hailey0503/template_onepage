@@ -41,7 +41,7 @@ const Header = () => {
   return (
 	<div className={styles.container}>
 	<Link href="/" className={styles.logo}>
-	  uluwatu
+	  uluwatu lab
 	</Link>
 	<div className={styles.links}>
 	
