@@ -1,16 +1,25 @@
 import React from 'react';
 import styles from '../styles/heroSection.module.css';
+import Image from "next/image";
+import Uluwatu from "public/uluwatu_morning.png"
 
 const HeroSection = () => {
   return (
-    <section className={styles.hero}>
-      <div className={styles.heroContent}>
-        <h1>Transforming Industries with AI-Driven Virtual Personas</h1>
-        <p>Your AI-powered solution for fashion, entertainment, advertisement, marketing, and the metaverse.</p>
-        <a href="#contact" className={styles.ctaButton}>Get Started</a>
-      </div>
-    </section>
-  );
+		<div>
+			<div className={styles.container}>
+				<div className={styles.item}>
+					
+						<h1 className={styles.title}>Bringing Virtual Worlds to Life: Your AI-Powered Reality</h1>
+						<p className={styles.description}>"Sculpting Digital Imagination into Tangible Experiences"</p>
+						<button  url="/portfolio" className={styles.button}>See works</button>
+					
+				</div>
+				<div className={styles.item}>
+					<Image src={Uluwatu} alt="uluwatu" className={styles.img} />
+				</div>
+			</div>
+		</div>
+	)
 };
 
 export default HeroSection;
