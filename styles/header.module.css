@@ -6,18 +6,18 @@
 	padding-left: 35px;
 	padding-right: 35px;
 	margin: 0 20px;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  font-size: 18px;
-  transition: color 0.3s ease;
+  	
+  	font-weight: bold;
+  
+  	transition: color 0.3s ease;
   
 }
 
 .logo{
 	font-weight: bold;
-	font-size: 22px;
-	color:  #6096B4;
+	font-size: 25px;
+	color:  #666;
+	text-decoration: none
 	
 }
 
@@ -25,10 +25,12 @@
 	display: flex;
 	align-items: center;
 	gap: 20px;
+	color: #666;
+	text-decoration: none
 }
 
 .logout{
-	padding:5px;
+	padding:7px;
 	border: none;
 	background-color: #FEFF86;
 	color: #203e49;
