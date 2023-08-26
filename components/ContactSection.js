@@ -6,7 +6,8 @@ const ContactSection = () => {
     <section className={styles.contact}>
       <h2>Contact Us</h2>
       <p>Have questions or want to know more? Reach out to us!</p>
-      <form>
+      
+      <form action="https://formsubmit.io/send/uluwatulab@gmail.com" method="POST">
         <label htmlFor="name">Name</label>
         <input type="text" id="name" name="name" required />
 
@@ -15,7 +16,7 @@ const ContactSection = () => {
 
         <label htmlFor="message">Message</label>
         <textarea id="message" name="message" rows="4" required></textarea>
-
+        
         <button type="submit">Send Message</button>
       </form>
     </section>
