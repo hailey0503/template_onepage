@@ -10,7 +10,7 @@ const HeroSection = () => {
 				<div className={styles.item}>
 					
 						<h1 className={styles.title}>Bringing Virtual Worlds to Life: Your AI-Powered Reality</h1>
-						<p className={styles.description}>"Sculpting Digital Imagination into Tangible Experiences"</p>
+						<p className={styles.description}>Sculpting Digital Imagination into Tangible Experiences</p>
 						<button  url="/portfolio" className={styles.button}>See works</button>
 					
 				</div>
