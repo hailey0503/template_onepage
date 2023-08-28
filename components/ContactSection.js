@@ -1,10 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../styles/contactSection.module.css";
 
 const ContactSection = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [isSent, setIsSent] = useState(false);
+
+  useEffect(() => {
+    if (isSent) {
+      const timer = setTimeout(() => {
+        setIsSent(false);
+      }, 5000); // Hide the alert after 5 seconds
+
+      return () => clearTimeout(timer);
+    }
+  }, [isSent]);
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -22,6 +34,10 @@ const ContactSection = () => {
     if (response.ok) {
       // Handle successful submission
       console.log('Email sent successfully!');
+      setIsSent(true);
+      setName(''); // Clear name field
+      setEmail(''); // Clear email field
+      setMessage(''); // Clear message field
     } else {
       // Handle submission error
       console.error('Error sending email.');
@@ -64,6 +80,10 @@ const ContactSection = () => {
           onChange={(e) => setMessage(e.target.value)} // Update the state on input change
         />
         <button type="submit">Send Message</button>
+        {isSent && (
+        <div className={styles.alert}>Email sent successfully!</div>
+        )}
+        
       </form>
     </section>
   );

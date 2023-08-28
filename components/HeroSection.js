@@ -5,7 +5,7 @@ import Uluwatu from "public/uluwatu_morning.png"
 
 const HeroSection = () => {
   return (
-		<div>
+		<div className={styles.over_container}>
 			<div className={styles.container}>
 				<div className={styles.item}>
 					
