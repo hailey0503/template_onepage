@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from "next/link";
 import styles from '../styles/header.module.css';
-//import DarkMode from "../darkMode/darkMode";
+import DarkMode from "./darkMode";
 //import { signOut, useSession } from "next-auth/react";
 
 
@@ -39,12 +39,13 @@ const links = [
 
 const Header = () => {
   return (
+	
 	<div className={styles.container}>
 	<Link href="/" className={styles.logo}>
 	  uluwatu lab
 	</Link>
 	<div className={styles.links}>
-	
+	<DarkMode />
 	  {links.map((link) => (
 		<Link key={link.id} href={link.url} className={styles.links}>
 		  {link.title}
@@ -53,6 +54,7 @@ const Header = () => {
 	 
 	</div>
   </div>
+ 
 
   )
 }

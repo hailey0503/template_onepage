@@ -37,3 +37,15 @@
 	cursor: pointer;
 	border-radius: 3px;
 }
+/* Light mode */
+.header {
+	background-color: #ffffff;
+	color: #333333;
+  }
+  
+  /* Dark mode */
+  .dark .header {
+	background-color: #333333;
+	color: #ffffff;
+  }
+  
