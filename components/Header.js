@@ -4,7 +4,7 @@ import React from 'react';
 import Link from "next/link";
 import styles from '../styles/header.module.css';
 import DarkMode from "./darkMode";
-//import { signOut, useSession } from "next-auth/react";
+import Image from "next/image";
 
 
 const links = [
@@ -41,9 +41,7 @@ const Header = () => {
   return (
 	
 	<div className={styles.container}>
-	<Link href="/" className={styles.logo}>
-	  uluwatu lab
-	</Link>
+	<Image src="/logo.png" width={75} height={55} className={styles.icon}alt="uluwatu lab" />
 	<div className={styles.links}>
 	<DarkMode />
 	  {links.map((link) => (
