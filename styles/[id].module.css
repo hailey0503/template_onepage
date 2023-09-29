@@ -1,0 +1,32 @@
+/* post.module.css */
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 40px;
+	padding-bottom: 50px; /* Add some padding at the bottom */
+	font-family: Arial, sans-serif;
+	display: flex;
+	flex-direction: column; /* Stack children vertically */
+	min-height: 100vh; /* Ensure at least full viewport height */
+  }
+  
+  /* Add more padding around the image */
+.icon {
+	margin: 20px 0; /* Adjust the margin values as needed */
+  }
+  
+  /* Increase the gap between paragraphs */
+  /* Use a local class or id to make the selector "pure" */
+  .paragraph {
+	margin-bottom: 30px; /* Adjust the margin-bottom value as needed */
+  }
+
+/* Set a soft font color */
+.soft-text {
+	color: #777; /* You can adjust the color value to your desired soft color */
+  }
+.text_color {
+	color:#777;
+	
+}

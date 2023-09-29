@@ -41,15 +41,15 @@ const Header = () => {
   return (
 	
 	<div className={styles.container}>
-	<a href='/'> <Image src="/logo.png" width={75} height={55} className={styles.icon} alt="uluwatu lab" /> </a> 
+	<a href='/'> <Image src="/logo.png" width={90} height={65} className={styles.icon} alt="uluwatu lab" /> </a> 
 	<div className={styles.links}>
-	<DarkMode />
+	
 	  {links.map((link) => (
 		<Link key={link.id} href={link.url} className={styles.links}>
 		  {link.title}
 		</Link>
 	  ))}
-	 
+	 <DarkMode />
 	</div>
   </div>
  

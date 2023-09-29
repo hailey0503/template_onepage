@@ -2,28 +2,43 @@
 .container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px;
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column; /* Stack children vertically */
   min-height: 100vh; /* Ensure at least full viewport height */
   }
-  
  
-  .blog-list {
-	margin-top: 20px;
+ .heading {
+	font-size: large;
+	color: #777;
+ }
+  .articleList {
+	list-style: none;
+	padding: 0;
   }
   
-  .blog-post {
-	border: 1px solid #ccc;
-	padding: 50px;
-	margin-bottom: 50px;
-	background-color: #f9f9f9;
+  .article {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px; /* Adjust spacing between articles */
   }
   
-  .blog-post h2 {
+  .thumbnail img {
+	max-width: 100px; /* Adjust the maximum width of the thumbnail */
+	margin-right: 20px; /* Adjust spacing between thumbnail and article info */
+  }
+  
+  .articleInfo {
+	flex: 1;
+  }
+  
+  .articleTitle {
 	font-size: 24px;
+	margin-bottom: 10px; /* Adjust spacing between title and date */
   }
   
-  /* Add more CSS styles as needed */
+  .articleDate {
+	color: #777; /* Soft font color */
+  }
   
