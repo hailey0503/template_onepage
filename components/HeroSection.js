@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 import styles from '../styles/heroSection.module.css';
 import Image from "next/image";
 import Uluwatu from "public/uluwatu_morning.png"
@@ -11,7 +12,7 @@ const HeroSection = () => {
 					
 						<h1 className={styles.title}>Bringing Virtual Worlds to Life: Your AI-Powered Reality</h1>
 						<p className={styles.description}>Sculpting Digital Imagination into Tangible Experiences</p>
-						<button  url="/portfolio" className={styles.button}>See works</button>
+						<button className={styles.button}><Link href="/service">See works</Link></button>
 					
 				</div>
 				<div className={styles.item}>

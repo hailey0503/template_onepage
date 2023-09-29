@@ -1,0 +1,29 @@
+/* styles/styles.css */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  min-height: 100vh; /* Ensure at least full viewport height */
+  }
+  
+ 
+  .blog-list {
+	margin-top: 20px;
+  }
+  
+  .blog-post {
+	border: 1px solid #ccc;
+	padding: 50px;
+	margin-bottom: 50px;
+	background-color: #f9f9f9;
+  }
+  
+  .blog-post h2 {
+	font-size: 24px;
+  }
+  
+  /* Add more CSS styles as needed */
+  
