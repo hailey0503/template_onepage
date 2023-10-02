@@ -16,7 +16,7 @@ const Post = ({ content, data }) => {
 	<h1 className={styles['soft-text']}>{data.title}</h1>
 	<p className={`${styles['soft-text']} ${styles.paragraph}`}>Published on: {data.date}</p>
      
-	  <Image src="/logo.png" width={140} height={100} className={styles.icon} alt="uluwatu logo" />
+	  <Image src="/logo_bg.png" width={140} height={100} className={styles.icon} alt="uluwatu logo" />
       <div className={styles.text_color} dangerouslySetInnerHTML={{ __html: content }} />
     </div>
 	<Footer />

@@ -41,7 +41,7 @@ const Header = () => {
   return (
 	
 	<div className={styles.container}>
-	<a href='/'> <Image src="/logo.png" width={90} height={65} className={styles.icon} alt="uluwatu lab" /> </a> 
+	<a href='/'> <Image src="/logo_bg.png" width={110} height={85} className={styles.icon} alt="uluwatu lab" /> </a> 
 	<div className={styles.links}>
 	
 	  {links.map((link) => (

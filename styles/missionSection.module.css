@@ -17,4 +17,10 @@
 	max-width: 800px;
 	margin: 0 auto;
   }
-  
+  .head {
+	padding-top: 100px;
+  }
+  .paragraph {
+	padding-top: 50px;
+	padding-bottom: 100px;
+  }

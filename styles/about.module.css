@@ -7,7 +7,13 @@
 	
 	text-align: center;
   }
-  
+  .paragraph {
+	padding-top: 40px;
+	padding-bottom: 70px;
+  }
+  .head {
+	padding-top: 100px;
+  }
   .about p {
 	font-size: 16px;
 	color: #7d7878;

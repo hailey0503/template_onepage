@@ -1,4 +1,3 @@
-// pages/index.js
 import Link from "next/link";
 //import styles from '../styles/blog.module.css';
 import styles from "../styles/blog.module.css";
@@ -21,7 +20,7 @@ const Blog = ({ posts }) => {
 			  {posts.map((post) => (
 				<li key={post.id} className={styles.article}>
 				  <div className={styles.thumbnail}>
-					<Image src="/logo.png"  width={45} height={35}  alt={post.title} />
+					<Image src="/logo_bg.png"  width={65} height={50}  alt={post.title} />
 				  </div>
 				  <div className={styles.articleInfo}>
 					<h2 className={styles.articleTitle}>
