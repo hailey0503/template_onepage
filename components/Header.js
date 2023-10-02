@@ -38,23 +38,22 @@ const links = [
   
 
 const Header = () => {
-  return (
-	
-	<div className={styles.container}>
-	<a href='/'> <Image src="/logo_bg.png" width={110} height={85} className={styles.icon} alt="uluwatu lab" /> </a> 
-	<div className={styles.links}>
-	
-	  {links.map((link) => (
-		<Link key={link.id} href={link.url} className={styles.links}>
-		  {link.title}
-		</Link>
-	  ))}
-	 <DarkMode />
-	</div>
-  </div>
- 
-
-  )
+  
+	return (
+		<div className={styles.container}>
+		  <a href='/'>
+			<Image src='/logo_bg.png' width={110} height={85} className={styles.icon} alt='uluwatu lab' />
+		  </a>
+		  <div className={styles.links}>
+			{links.map((link) => (
+			  <Link key={link.id} href={link.url} className={styles.links}>
+				{link.title}
+			  </Link>
+			))}
+			<DarkMode />
+		  </div>
+		</div>
+	  );
 }
 
 

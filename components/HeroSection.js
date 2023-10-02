@@ -2,6 +2,7 @@ import Link from "next/link";
 import styles from "../styles/heroSection.module.css";
 import BG from "public/bg_move1.mp4";
 import { useState } from "react";
+import Header from "./Header.js"
 
 const data = [
   "Bringing Virtual ",
@@ -28,7 +29,10 @@ const HeroSection = () => {
           Your browser does not support the video tag.
         </video>
       </div>
-
+      <div className={styles.header}>
+      <Header />
+      </div>
+     
       <div
         className={`${styles.title} ${isHovered ? styles.hovered : ""}`}
         onMouseEnter={handleMouseEnter}
