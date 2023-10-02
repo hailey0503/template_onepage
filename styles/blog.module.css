@@ -3,15 +3,15 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 40px;
-  font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column; /* Stack children vertically */
   min-height: 100vh; /* Ensure at least full viewport height */
   }
  
  .heading {
-	font-size: large;
+	font-size: 28px;
 	color: #777;
+  padding-bottom: 40px;
  }
   .articleList {
 	list-style: none;
@@ -21,7 +21,7 @@
   .article {
 	display: flex;
 	align-items: center;
-	margin-bottom: 20px; /* Adjust spacing between articles */
+	margin-bottom: 30px; /* Adjust spacing between articles */
   }
   
   .thumbnail img {
@@ -33,9 +33,14 @@
 	flex: 1;
   }
   
-  .articleTitle {
-	font-size: 24px;
-	margin-bottom: 10px; /* Adjust spacing between title and date */
+  .articleTitle a {
+    text-decoration: none; /* Remove the default underline on links */
+    color: #115174; /* Set the default font color for the article title */
+    transition: color 0.3s ease; /* Add a smooth transition effect for the color property */
+  }
+  
+  .articleTitle a:hover {
+    color: #5f9fc2; /* Change the font color to red when hovering */
   }
   
   .articleDate {

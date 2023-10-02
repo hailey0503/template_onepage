@@ -5,7 +5,6 @@
 	margin: 0 auto;
 	padding: 40px;
 	padding-bottom: 50px; /* Add some padding at the bottom */
-	font-family: Arial, sans-serif;
 	display: flex;
 	flex-direction: column; /* Stack children vertically */
 	min-height: 100vh; /* Ensure at least full viewport height */
@@ -24,7 +23,7 @@
 
 /* Set a soft font color */
 .soft-text {
-	color: #777; /* You can adjust the color value to your desired soft color */
+	color: #5ba3c9; /* You can adjust the color value to your desired soft color */
   }
 .text_color {
 	color:#777;
