@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "../styles/heroSection.module.css";
-import BG from "public/bg_move.mp4";
+import BG from "public/bg_move1.mp4";
 import { useState } from "react";
 
 const data = [

@@ -1,6 +1,6 @@
 .section {
   position: relative;
-  height: 170vh; /* Increased the min-height to make the hero section taller */
+  height: 160vh; /* Increased the min-height to make the hero section taller */
   scroll-snap-align: center;
   display: flex;
   flex-direction: column;
