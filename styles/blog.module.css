@@ -9,8 +9,7 @@
   }
  
  .heading {
-	font-size: 28px;
-	color: #777;
+	font-size: 15px;
   padding-bottom: 40px;
  }
   .articleList {
@@ -35,12 +34,12 @@
   
   .articleTitle a {
     text-decoration: none; /* Remove the default underline on links */
-    color: #115174; /* Set the default font color for the article title */
+    color: #5f9fc2; /* Set the default font color for the article title */
     transition: color 0.3s ease; /* Add a smooth transition effect for the color property */
   }
   
   .articleTitle a:hover {
-    color: #5f9fc2; /* Change the font color to red when hovering */
+    color: #115174; /* Change the font color to red when hovering */
   }
   
   .articleDate {
