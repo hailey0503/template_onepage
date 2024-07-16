@@ -1,46 +1,80 @@
-import React from 'react';
+import React from "react";
+import styles from "../styles/productSection.module.css";
+import webAppImage from "../public/web.png"; // Add the actual path to your image
+import cliImage from "../public/cli.png"; // Add the actual path to your image
 import Image from "next/image";
-import styles from '../styles/productSection.module.css';
-import barn from "public/barn1.png"
-import october from "public/october.png"
-import frame from "public/frame_uluwatu.png"
-import girl1 from "public/girl1.png"
-import boat from "public/boat.png"
 
 const ProductSection = () => {
   return (
-    <section className={styles.products}>
-      <h2>Our Products and Services</h2>
-      <div className={styles.product}>
-      <Image src={girl1} alt="Fashion" />
-        <h3>Fashion</h3>
-        <p>Elevate your fashion brand with AI-powered virtual models that showcase your clothing line in stunning realism. From runway presentations to online catalogs, our virtual models bring style to life.</p>
-      </div>
-      <div className={styles.product}>
-      <Image src={frame} alt="Entertainment" />
-        <h3>Entertainment</h3>
-        <p>Transform entertainment experiences with lifelike virtual performers. Our AI-driven characters can take center stage in concerts, movies, and interactive experiences, captivating audiences worldwide.</p>
-      </div>
-      <div className={styles.product}>
-      <Image src={october} alt="Advertisement" />
-        <h3>Advertisement</h3>
-        <p>Create memorable ad campaigns with virtual spokespersons that resonate with your target audience. Our virtual brand ambassadors deliver your message with charisma, precision, and a touch of the extraordinary.</p>
-      </div>
-      <div className={styles.product}>
-        <Image src={barn} alt="Marketing" />
-        <h3>Marketing</h3>
-        <p>Enhance your marketing strategies with personalized AI-driven assistants that engage customers across channels. From chatbots to virtual concierges, our solutions elevate customer interactions to new heights.</p>
-      </div>
-      <div className={styles.product}>
-      <Image src={boat} alt="Metaverse" />
-        <h3>Metaverse</h3>
-        <p>Step into the metaverse with AI companions that journey alongside users in virtual worlds. Our metaverse companions offer guidance, companionship, and a touch of the extraordinary in digital realms.</p>
-      </div>
-    </section>
+    <div className={styles.products}>
+      <header className={styles.header}>
+        <h1>SPAM: Efficient and cost-effective stress testing for Solana.</h1>
+      </header>
 
+      <main className={styles.main}>
+        <section className={styles.section}>
+          <Image src={webAppImage} alt="Web App" />
+          <h2>
+            Web App{" "}
+            <a href="https://spam.supply" className={styles.link}>
+              https://spam.supply
+            </a>
+          </h2>
+          <h3>Overview</h3>
+          <ul>
+            <li>
+              A user-friendly website that enables anyone to mine tokens with a
+              few clicks, no technical knowledge required.
+            </li>
+          </ul>
+          <h3>Features</h3>
+          <ul>
+            <li>Simple interface for easy mining.</li>
+            <li>Displays basic data about SPAM.</li>
+          </ul>
+        </section>
 
+        <section className={styles.section}>
+          <Image src={cliImage} alt="CLI Tool" />
+          <h2>Mining Spam using CLI</h2>
+          <h3>Overview</h3>
+          <ul>
+            <li>
+              Our CLI tool is designed for users who are more comfortable with
+              computer scripts and terminals.
+            </li>
+          </ul>
+          <h3>Features</h3>
+          <ul>
+            <li>Allows advanced users to mine $SPAM tokens efficiently.</li>
+          </ul>
+        </section>
+      </main>
+
+      <section className={`${styles.section} ${styles.upcomingProduct}`}>
+        <h2>Upcoming Product</h2>
+        <div className={styles.inlineContainer}>
+          <h3>Spam Mobile:</h3>
+          <p>
+            Currently under development. The mobile web will enable users to
+            mine $SPAM while they browse the internet on their mobile devices.
+          </p>
+        </div>
+        <div className={styles.inlineContainer}>
+          <h3>Chrome Extension:</h3>
+          <p>
+            Currently under development. This extension will further simplify
+            the mining process and integrate seamlessly with the user's browser.
+          </p>
+        </div>
+        <div className={styles.inlineContainer}>
+          <h3>User Incentive Program:</h3>
+          <p>Referral Program, Early User Incentive Program.</p>
+        </div>
+      </section>
+      <div className={styles.space}></div>
+    </div>
   );
 };
 
 export default ProductSection;
-

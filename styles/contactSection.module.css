@@ -41,7 +41,7 @@
   
   .contact button {
 	padding: 10px 20px;
-	background-color: #6096B4;
+	background-color:  #319795;
 	color: #fff;
 	border: none;
 	border-radius: 5px;
@@ -51,7 +51,7 @@
   }
   
   .contact button:hover {
-	background-color:#115174;
+	background-color:#46d4d4;
   }
   .alert {
 	position: fixed;

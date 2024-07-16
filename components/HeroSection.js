@@ -5,9 +5,9 @@ import { useState } from "react";
 import Header from "./Header.js"
 
 const data = [
-  "Bringing Virtual ",
-  "Worlds to Life: Your",
-  "AI-Powered Reality"
+  "Enhancing Blockchain",
+  "Performance on",
+  "the Solana Network"
 ];
 
 const HeroSection = () => {
@@ -43,10 +43,10 @@ const HeroSection = () => {
         ))}
       </div>
       <p className={styles.description}>
-        Sculpting Digital Imagination into Tangible Experiences
+      Enhance the Solana Ecosystem with Continuous Stress Testing
       </p>
       <button className={styles.button}>
-        <Link href="/service">See works</Link>
+        <Link href="/service">See Products</Link>
       </button>
     </div>
   );

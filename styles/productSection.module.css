@@ -1,36 +1,97 @@
-/* Products section styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 .products {
-	padding: 100px 0;
-	text-align: center;
-	background-color: #f5f5f5;
+  padding: 2rem;
+  background-color: #f7fafc;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #319795;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.main {
+  display: flex;
+  gap: 2rem;
+}
+
+.section {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.section img {
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: auto;
+}
+
+.section h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #515050; /* Grey color for text */
+}
+
+.section h3 {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #838181; /* Grey color for text */
+}
+
+.section ul {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  color: #838181; /* Grey color for text */
+}
+
+.upcomingProduct {
+  background-color: #319795;
+  color: white;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.upcomingProduct h2 {
+	color: white;
+}
+.upcomingProduct h3 {
+	color: white;
+	padding-left: 3vw;
+}
+.upcomingProduct p {
+  color: white; /* Ensure all text in the upcomingProduct section is white */
+  padding-left: 3vw;
+}
+.upcomingProduct p {
+  margin-top: 1rem;
+}
+.inlineContainer {
+	display: flex;
+	align-items: center;
   }
   
-  .products h2 {
-	font-size: 28px;
-	margin-bottom: 40px;
-	color: #333;
+  .inlineContainer h3 {
+	margin-right: 5px; /* Adjust the space between the h3 and p */
   }
-  
-  .product {
-	margin-bottom: 40px;
-  }
-  
-  .product img {
-	max-width: 100%;
-  }
-  
-  .product h3 {
-	font-size: 24px;
-	margin-top: 20px;
-	margin-bottom: 10px;
-	color: #333;
-  }
-  
-  .product p {
-	font-size: 16px;
-	color: #666;
-	line-height: 1.6;
-	max-width: 800px;
-	margin: 0 auto;
+  .space {
+	padding-top:10vh
   }
   

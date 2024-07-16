@@ -15,14 +15,10 @@ const links = [
 	},
 	{
 	  id: 2,
-	  title: "Service",
-	  url: "/service",
+	  title: "Product",
+	  url: "/product",
 	},
-	{
-	  id: 3,
-	  title: "Blog",
-	  url: "/blog",
-	},
+	
 	{
 	  id: 4,
 	  title: "About Us",
