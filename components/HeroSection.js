@@ -46,7 +46,7 @@ const HeroSection = () => {
       Enhance the Solana Ecosystem with Continuous Stress Testing
       </p>
       <button className={styles.button}>
-        <Link href="/service">See Products</Link>
+        <Link href="/product">See Products</Link>
       </button>
     </div>
   );
