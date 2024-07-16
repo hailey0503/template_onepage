@@ -1,15 +1,21 @@
 import nodemailer from 'nodemailer';
-require("dotenv").config();
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 export default async (req, res) => {
   if (req.method === 'POST') {
     const { name, email, message } = req.body;
 
+    // Log to check if environment variables are loaded correctly
+    console.log('EMAIL:', process.env.EMAIL);
+    console.log('PW:', process.env.PW ? 'Password loaded' : 'Password not loaded');
+
     const transporter = nodemailer.createTransport({
       service: 'Gmail',
       auth: {
         user: process.env.EMAIL,
-        pass: process.env.PW
+        pass: process.env.PW,
       },
     });
 
@@ -21,11 +27,12 @@ export default async (req, res) => {
     };
 
     try {
-      await transporter.sendMail(mailOptions);
+      const info = await transporter.sendMail(mailOptions);
+      console.log('Email sent: ', info.response);
       res.status(200).json({ message: 'Email sent successfully!' });
     } catch (error) {
-      console.error(error);
-      res.status(500).json({ error: 'Error sending email.' });
+      console.error('Error sending email:', error);
+      res.status(500).json({ error: 'Error sending email.', details: error.message });
     }
   } else {
     res.status(405).json({ error: 'Method not allowed.' });
